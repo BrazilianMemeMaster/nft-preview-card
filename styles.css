@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-body {
+    background-color: hsl(216, 50%, 16%);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    width: 275px;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 0 50px 10px hsl(217, 51%, 8%);
+}
+
+.image {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.image>a {
+    background-color: hsl(178, 100%, 50%, 50%);
+    height: 275px;
+    border-radius: 10px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: 20px;
+    z-index: 3;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.image>a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card-image {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 275px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.card-image:hover {
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: 2px;
+    transition: color 0.2s ease-out;
+    width: 60%;
+}
+
+.card-title:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.card-description {
+    font-size: .85em;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+.params {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.price {
+    font-size: .8em;
+    display: flex;
+    color: hsl(178, 100%, 50%);
+}
+
+.price>img {
+    margin-right: 5px;
+}
+
+.date {
+    font-size: .8em;
+    display: flex;
+    color: hsl(215, 51%, 70%);
+}
+
+.date>img {
+    margin-right: 5px;
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    font-size: .80em;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    line-height: 1px;
+}
+
+.avatar>img {
+    width: 33px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.creator>a {
+    color: white;
+    margin-left: 3px;
+    transition: color 0.2s ease-out;
+}
+
+.creator>a:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
